@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Realistic Cloud Banner Parallax Effects | CSS & Javascript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="banner">
+            <h2 id="text">Heaven</h2>
+            <div class="clouds">
+                <img src="./img/cloud1.png" style="--i:1;">
+                <img src="./img/cloud2.png" style="--i:2;">
+                <img src="./img/cloud3.png" style="--i:3;">
+                <img src="./img/cloud4.png" style="--i:4;">
+                <img src="./img/cloud5.png" style="--i:5;">
+
+                <img src="./img/cloud1.png" style="--i:10;">
+                <img src="./img/cloud2.png" style="--i:9;">
+                <img src="./img/cloud3.png" style="--i:8;">
+                <img src="./img/cloud4.png" style="--i:7;">
+                <img src="./img/cloud5.png" style="--i:6;">
+                
+            </div>
+        </div>
+        <section>
+            <h2>
+            Realistic Cloud Banner Parallax Effects | CSS & Javascript
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem esse a impedit neque asperiores in, odit obcaecati facere molestiae repudiandae atque reiciendis ullam sequi accusamus est veritatis necessitatibus dignissimos! Doloremque quisquam tenetur autem enim repudiandae officiis obcaecati quia libero quos voluptates sit odit quae cupiditate rerum asperiores nisi, minima rem tempora eum doloribus delectus voluptate perferendis corrupti. Ullam, fuga ratione doloremque optio assumenda hic cumque? Facilis blanditiis quasi unde, perspiciatis saepe laudantium sunt sed, doloribus facere aliquid fugit fugiat illo quo eos ipsum ut omnis. Et a enim quam numquam! Tempore dicta aliquid architecto possimus, ea ab error debitis?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, modi doloremque facilis quae consectetur praesentium cumque veritatis, deleniti, ullam assumenda minus? Enim labore ullam perferendis! Praesentium doloribus quis veniam tempora.
+            
+        </p>
+        </section>
+        <script type="text/javascript">
+            let text=document.getElementById('text');
+            window.addEventListener('scroll', function(){
+                let value=window.scrollY;
+                text.style.marginBottom=value*2 +'px';
+            })
+        </script>
+    </body>
+</html>
